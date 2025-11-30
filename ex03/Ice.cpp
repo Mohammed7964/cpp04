@@ -1,22 +1,22 @@
 #include "Ice.hpp"
 
-Ice::Ice() : AMateria("Default_Ice")
+Ice::Ice() : AMateria("ice")
 {
-    std::cout << "Ice default constructor called" << std::endl;
+    // std::cout << "Ice default constructor called" << std::endl;
 }
 Ice::~Ice()
 {
-    std::cout << "Ice Destructor called" << std::endl;
+    // std::cout << "Ice Destructor called" << std::endl;
 }
 Ice& Ice::operator=(const Ice& obj)
 {
-    std::cout << "Ice assignment operator called" << std::endl;
+    // std::cout << "Ice assignment operator called" << std::endl;
     (void)obj;
     return *this;
 }
 Ice::Ice(const Ice& obj)
 {
-    std::cout << "Ice copy constructor called" << std::endl;
+    // std::cout << "Ice copy constructor called" << std::endl;
     *this = obj;
 }
 AMateria* Ice::clone() const
